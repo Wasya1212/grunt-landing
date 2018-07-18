@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Workshop</title>
+    <title>Barracuda</title>
     <meta charset="utf-8"/>
-    <meta content="Space Academy" name="author"/>
-    <meta content="Workshop" name="description"/>
+    <meta content="Wasya1212" name="author"/>
+    <meta content="Simple site" name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="HandheldFriendly" content="true"/>
     <meta name="format-detection" content="telephone=no"/>
@@ -16,6 +16,11 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"/>
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <!-- build:slick-carousel-->
+    <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <!-- endbuild-->
     <!-- build:css css/vendor.css-->
     <link rel="stylesheet" href="libs/mdi/css/materialdesignicons.min.css"/>
     <!-- endbuild-->
@@ -25,68 +30,611 @@
   </head>
   <body class="page">
     <div class="page__wrap">
-      <div class="head-line">
-        <div class="head-line__container">
-          <div class="head-line-item"><i class="head-line-item__icon mdi mdi-map-marker"></i>г. Киев, ул. Михайловская, 20
-          </div>
-          <div class="head-line-item"><i class="head-line-item__icon mdi mdi-map-marker"></i>г. Киев, ул. Михайловская, 20
-          </div>
-          <div class="head-line-item"><i class="head-line-item__icon mdi mdi-map-marker"></i>г. Киев, ул. Михайловская, 20
-          </div>
-          <div class="head-line-item"><i class="head-line-item__icon mdi mdi-map-marker"></i>г. Киев, ул. Михайловская, 20
-          </div>
-        </div>
-      </div>
       <header class="header">
         <div class="header__container">
-          <div class="header__logo"><a class="logo" href="##"><img class="logo__img" src="img/logo/logo.svg" alt="" role="presentation"/></a>
+          <div class="header__logo"><a class="logo" href="##"><img class="logo__img" src="img/logo/Barracuda_logo_print_RGB.png" alt="" role="presentation"/></a>
+          </div>
+          <div class="header__top-line">
+            <div class="header-search"><input class="header-search__input-field" type="text" placeholder="Шукати..."/><i class="header-search__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="15" viewBox="0 0 16 15">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Shape_13" data-name="Shape 13" width="16" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEX////WAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgLWAgIAAAAc3jaUAAAALHRSTlMAABSG0vjQglPw8f6vPQhBFZcWrq0H+Q3z0fsgBgxAwQtU8lrT+vTOg7SzOyB5f74AAAABYktHRC3N2kE9AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gQOFAwi4P3EngAAAIpJREFUCNddz+sSgiAUBOADihqiptn9Atq99v2frzOIk7X/+GZYFiIiGcVKJamkkGwGH52Fcw5TlGVlkHuZa9TCp4ZuGFIsREiLiCFBNUKBmEGhHGGJ1S+ssfm/svWl7aRUCGomz+72DMOww/FkeKx1DNT1w/T+bFnIf+5yvd0fUjiLJ33DNe71/gBTswyWoHX6cwAAAABJRU5ErkJggg=="/>
+</svg>
+</i>
+            </div>
+            <div class="contact-us"><span class="contact-us__phone-number">+38 063 154 35 56</span>
+            </div>
+            <div class="user-profile"><a class="user-profile__link" href="#"><i class="user-profile__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="profile" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEX///9xcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnQAAAB1B74cAAAAMnRSTlMAA3vS0XUCkqsgI7KKD+IHCeUqvMQKE+YFeMVFSM1tV7CuU2HABLVHMLFvqQGoORC44Bx7XOsAAAABYktHRDJA0kzIAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gQOERMnWwb8ZAAAAG9JREFUCNdjYGBgYGRiZmFlY4AAdg5OLm4eCJuXj5+BQUBQAMwREgaRIpxgjqggLwODmLgERJ2klLSMrBzUAAZ5BUUlCItRWVEFCBSVVYFsNW51DSBQ11RjZNDS1oEq1tVikNLThwI9KQYDQzgwAADXWwpj7hMFkgAAAABJRU5ErkJggg=="/>
+</svg>
+</i><span class="user-profile__desc-title">Мій кабінет</span></a>
+            </div>
+            <div class="languages dropdown"><i class="languages__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="worldwide" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAnFBMVEX///9xcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnRxcnQAAACpbs/mAAAAM3RSTlMAR3pzewqfXUOYiB5/U35jFYdBWFqkmgxGPy+QUAF1D3JZPXZ3hn1rJoJEQjsXiYorCALy9KfDAAAAAWJLR0QzN9V8XgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IEDhQkKrN74gYAAAB8SURBVAjXHY3ZFoIwDERvgaJWRaz7gtSlVVHc/v/jTMlDMvdMJgFQSZpmilg670nvD4yWYYYjxsWEcgpWMZsvlitYb0jE3O7yYk+VcYi52nE8ccZFqC7gRYbu5PWm7yJtE+HxNGVjxW4FXu9P6+NTL97313jdBWxwLsgOf9YPB+nQJENMAAAAAElFTkSuQmCC"/>
+</svg>
+</i><span class="languages__current-lang">ua</span>
+              <menu class="languages__list" type="context">
+                <menuitem class="languages__lang">ua
+                </menuitem>
+                <menuitem class="languages__lang">en
+                </menuitem>
+                <menuitem class="languages__lang">ru
+                </menuitem>
+              </menu>
+            </div>
           </div>
           <div class="header__nav">
             <nav class="header-nav">
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Главная</a>
+              <div class="header-nav__item dropdown"><a class="header-nav__link" href="index.html">Продукція</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 1</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 2</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 3</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 4</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 5</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 6</a>
+                  </li>
+                </ul>
               </div>
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">О нас</a>
+              <div class="header-nav__item dropdown"><a class="header-nav__link" href="index.html">Готові рішення</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 1</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 2</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 3</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 4</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 5</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 6</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 7</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 8</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 9</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 10</a>
+                  </li>
+                </ul>
               </div>
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Услуги</a>
+              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Підтримка</a>
               </div>
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">информация</a>
+              <div class="header-nav__item dropdown"><a class="header-nav__link" href="index.html">Система</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 1</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 2</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="index.html">Продукція 3</a>
+                  </li>
+                </ul>
               </div>
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Блог</a>
-              </div>
-              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Контакты</a>
+              <div class="header-nav__item"><a class="header-nav__link" href="index.html">Контакти</a>
               </div>
             </nav>
-          </div>
-          <div class="header__btn">
-            <button class="btn btn--header">Заявка на просчет
-            </button>
+            <div class="header-shopping-cart"><i class="header-shopping-cart__icon shopping_cart"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <path d="m10.7,99.5h4.8c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h19.3c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h5.2c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-79.2v-8h90c1.8,0 3.4-1.2 3.9-3l13.6-49.7c0.3-1.2 0.1-2.5-0.7-3.5-0.8-1-2-1.6-3.2-1.6h-103.6v-14.9c3.55271e-15-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v18.9 49.7 16.1c-1.77636e-15,2.4 1.8,4.2 4.1,4.2zm59.3,2.3c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5 0-10.4zm-46.2,0c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5-3.55271e-15-10.4zm-9-68.2h98.2l-11.4,41.6h-86.8v-41.6z"/>
+  </g>
+</svg>
+</i><span class="header-shopping-cart__products-count">0 шт</span>
+            </div>
           </div>
         </div>
       </header>
       <section class="intro">
-        <div class="intro__container">
-          <div class="intro__info">
-            <div class="intro-info">
-              <div class="title"><span class="title__text">НАДЕЖНАЯ ТИПОГРАФИЯ СО СВОИМ ПРОИЗВОДСТВОМ</span>
-              </div>
-              <p class="intro-info__text">Наша цель проста — предоставить нашим клиентам высокий уровень качества и сервиса. Мы верим, что отличные идеи начинаются с отличного дизайна и печати.
-              </p><a class="btn" href="###">Заявка на просчет</a>
+        <div class="intro__slider">
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
             </div>
           </div>
-          <div class="intro__stat">
-            <div class="intro-stat"><span class="intro-stat__num">5</span>лет<span>работы</span>
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
             </div>
-            <div class="intro-stat"><span class="intro-stat__num">2500</span>клиентов
+          </div>
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
             </div>
-            <div class="intro-stat"><span class="intro-stat__num">50</span>заказов<span>каждый день</span>
+          </div>
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
+            </div>
+          </div>
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
+            </div>
+          </div>
+          <div class="intro__slide">
+            <div class="intro__wrapper">
+              <header class="intro__info">
+                <h3 class="intro__title">ajax StreetSiren
+                </h3>
+                <p class="intro__text">Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                </p>
+                <div class="img-container"><img class="img-container__img" src="img/product.png" alt="" role="presentation"/>
+                </div><a class="btn" nohref="nohref"><span class="btn__details">Детальніше</span><i class="btn__icon more"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="up-arrow" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA0TIDVN5ZOcAAAAW0lEQVQY03WOsQ2AMAwEL07BAqyFxAAoczANRVbIdBSRKZAhhuS/+jvJMsrTVQ+NtoQ3hYlMvEcrKglMtcKpoHwSyUAKujH/1E4RBhmekj6mSh/7dxvsxcJpGC7caiGauLlIBgAAAABJRU5ErkJggg=="/>
+</svg>
+</i></a>
+              </header>
             </div>
           </div>
         </div>
       </section>
-      <footer>footer</footer>
+      <section class="products">
+        <article class="products__head">
+          <h3 class="products__title">Нові товари
+          </h3><a class="products__show-more" href="##">Показати усі</a>
+        </article>
+        <section class="products__items">
+          <div class="product">
+            <div class="product__control">
+              <div class="panel"><a class="btn buy" nohref="nohref"><i class="btn__icon shopping_cart"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <path d="m10.7,99.5h4.8c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h19.3c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h5.2c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-79.2v-8h90c1.8,0 3.4-1.2 3.9-3l13.6-49.7c0.3-1.2 0.1-2.5-0.7-3.5-0.8-1-2-1.6-3.2-1.6h-103.6v-14.9c3.55271e-15-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v18.9 49.7 16.1c-1.77636e-15,2.4 1.8,4.2 4.1,4.2zm59.3,2.3c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5 0-10.4zm-46.2,0c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5-3.55271e-15-10.4zm-9-68.2h98.2l-11.4,41.6h-86.8v-41.6z"/>
+  </g>
+</svg>
+</i><span class="btn__text">В КОШИК</span></a><a class="btn details" nohref="nohref"><i class="btn__icon info"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <g>
+      <path d="m64.5,122.6c32,0 58-26 58-58s-26-58-58-58-58.1,26-58.1,58 26.1,58 58.1,58zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"/>
+      <path d="m54.8,90.1c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1 4.1,4.1h26.9c2.3,0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1h-9.4v-36.1c0-2.3-1.8-4.1-4.1-4.1h-13.4c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h9.4v32h-9.4z"/>
+      <circle cx="62.7" cy="36.5" r="6.6"/>
+    </g>
+  </g>
+</svg>
+</i><span class="btn__text">ДЕТАЛЬНІШЕ</span></a>
+                <div class="price"><span class="price__new">1200 грн</span>
+                </div>
+              </div>
+              <div class="picture"><img class="picture__img" src="img/111111.png" alt="" role="presentation"/>
+              </div>
+            </div>
+            <div class="product__description"><strong class="product__name">Suprema Biostation L2</strong>
+              <p class="product__characteristic">BioStation A2 нашпигований найкращим у світі процесором на 4 ядра, що забеспечує найкращий у світі производительность, графику и скорость работы. Устройство имеет емкость 8 Гб для автономного хранения данных до полумиллиона пользователей, а также ведения журнала на 5 миллионов событий, что позволяет обслуживать потребности крупнейшего учреждения.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__control">
+              <div class="panel"><a class="btn buy" nohref="nohref"><i class="btn__icon shopping_cart"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <path d="m10.7,99.5h4.8c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h19.3c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h5.2c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-79.2v-8h90c1.8,0 3.4-1.2 3.9-3l13.6-49.7c0.3-1.2 0.1-2.5-0.7-3.5-0.8-1-2-1.6-3.2-1.6h-103.6v-14.9c3.55271e-15-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v18.9 49.7 16.1c-1.77636e-15,2.4 1.8,4.2 4.1,4.2zm59.3,2.3c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5 0-10.4zm-46.2,0c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5-3.55271e-15-10.4zm-9-68.2h98.2l-11.4,41.6h-86.8v-41.6z"/>
+  </g>
+</svg>
+</i><span class="btn__text">В КОШИК</span></a><a class="btn details" nohref="nohref"><i class="btn__icon info"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <g>
+      <path d="m64.5,122.6c32,0 58-26 58-58s-26-58-58-58-58.1,26-58.1,58 26.1,58 58.1,58zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"/>
+      <path d="m54.8,90.1c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1 4.1,4.1h26.9c2.3,0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1h-9.4v-36.1c0-2.3-1.8-4.1-4.1-4.1h-13.4c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h9.4v32h-9.4z"/>
+      <circle cx="62.7" cy="36.5" r="6.6"/>
+    </g>
+  </g>
+</svg>
+</i><span class="btn__text">ДЕТАЛЬНІШЕ</span></a>
+                <div class="price"><span class="price__old">3100 грн</span><span class="price__new">2750 грн</span>
+                </div>
+              </div>
+              <div class="picture"><img class="picture__img" src="img/222222.png" alt="" role="presentation"/>
+              </div><span class="product__sale">АКЦІЯ</span>
+            </div>
+            <div class="product__description"><strong class="product__name">Suprema BioEntry Plus</strong>
+              <p class="product__characteristic">BioStation A2 нашпигований найкращим у світі процесором на 4 ядра, що забеспечує найкращий у світі производительность, графику и скорость работы. Устройство имеет емкость 8 Гб для автономного хранения данных до полумиллиона пользователей, а также ведения журнала на 5 миллионов событий, что позволяет обслуживать потребности крупнейшего учреждения.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__control">
+              <div class="panel"><a class="btn buy" nohref="nohref"><i class="btn__icon shopping_cart"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <path d="m10.7,99.5h4.8c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h19.3c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h5.2c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-79.2v-8h90c1.8,0 3.4-1.2 3.9-3l13.6-49.7c0.3-1.2 0.1-2.5-0.7-3.5-0.8-1-2-1.6-3.2-1.6h-103.6v-14.9c3.55271e-15-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v18.9 49.7 16.1c-1.77636e-15,2.4 1.8,4.2 4.1,4.2zm59.3,2.3c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5 0-10.4zm-46.2,0c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5-3.55271e-15-10.4zm-9-68.2h98.2l-11.4,41.6h-86.8v-41.6z"/>
+  </g>
+</svg>
+</i><span class="btn__text">В КОШИК</span></a><a class="btn details" nohref="nohref"><i class="btn__icon info"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <g>
+      <path d="m64.5,122.6c32,0 58-26 58-58s-26-58-58-58-58.1,26-58.1,58 26.1,58 58.1,58zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"/>
+      <path d="m54.8,90.1c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1 4.1,4.1h26.9c2.3,0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1h-9.4v-36.1c0-2.3-1.8-4.1-4.1-4.1h-13.4c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h9.4v32h-9.4z"/>
+      <circle cx="62.7" cy="36.5" r="6.6"/>
+    </g>
+  </g>
+</svg>
+</i><span class="btn__text">ДЕТАЛЬНІШЕ</span></a>
+                <div class="price"><span class="price__old">5399 грн</span><span class="price__new">4299 грн</span>
+                </div>
+              </div>
+              <div class="picture"><img class="picture__img" src="img/333333.png" alt="" role="presentation"/>
+              </div><span class="product__sale">АКЦІЯ</span>
+            </div>
+            <div class="product__description"><strong class="product__name">Suprema Facestation 2</strong>
+              <p class="product__characteristic">BioStation A2 нашпигований найкращим у світі процесором на 4 ядра, що забеспечує найкращий у світі производительность, графику и скорость работы. Устройство имеет емкость 8 Гб для автономного хранения данных до полумиллиона пользователей, а также ведения журнала на 5 миллионов событий, что позволяет обслуживать потребности крупнейшего учреждения.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__control">
+              <div class="panel"><a class="btn buy" nohref="nohref"><i class="btn__icon shopping_cart"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <path d="m10.7,99.5h4.8c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h19.3c-3.3,5.9-2.5,13.5 2.5,18.5 2.9,2.9 6.8,4.5 11,4.5s8-1.6 11-4.5c2.9-2.9 4.5-6.8 4.5-11 0-2.7-0.7-5.2-2-7.5h5.2c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-79.2v-8h90c1.8,0 3.4-1.2 3.9-3l13.6-49.7c0.3-1.2 0.1-2.5-0.7-3.5-0.8-1-2-1.6-3.2-1.6h-103.6v-14.9c3.55271e-15-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v18.9 49.7 16.1c-1.77636e-15,2.4 1.8,4.2 4.1,4.2zm59.3,2.3c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5 0-10.4zm-46.2,0c1.4-1.4 3.2-2.2 5.2-2.2 2,0 3.8,0.8 5.2,2.2 1.4,1.4 2.2,3.2 2.2,5.2 0,2-0.8,3.8-2.2,5.2-2.8,2.8-7.6,2.8-10.4,0-2.9-2.9-2.9-7.5-3.55271e-15-10.4zm-9-68.2h98.2l-11.4,41.6h-86.8v-41.6z"/>
+  </g>
+</svg>
+</i><span class="btn__text">В КОШИК</span></a><a class="btn details" nohref="nohref"><i class="btn__icon info"><?xml version='1.0' encoding='utf-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  <g>
+    <g>
+      <path d="m64.5,122.6c32,0 58-26 58-58s-26-58-58-58-58.1,26-58.1,58 26.1,58 58.1,58zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"/>
+      <path d="m54.8,90.1c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1 4.1,4.1h26.9c2.3,0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1h-9.4v-36.1c0-2.3-1.8-4.1-4.1-4.1h-13.4c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h9.4v32h-9.4z"/>
+      <circle cx="62.7" cy="36.5" r="6.6"/>
+    </g>
+  </g>
+</svg>
+</i><span class="btn__text">ДЕТАЛЬНІШЕ</span></a>
+                <div class="price"><span class="price__new">4100 грн</span>
+                </div>
+              </div>
+              <div class="picture"><img class="picture__img" src="img/444444.png" alt="" role="presentation"/>
+              </div>
+            </div>
+            <div class="product__description"><strong class="product__name">Suprema Xpass S2</strong>
+              <p class="product__characteristic">BioStation A2 нашпигований найкращим у світі процесором на 4 ядра, що забеспечує найкращий у світі производительность, графику и скорость работы. Устройство имеет емкость 8 Гб для автономного хранения данных до полумиллиона пользователей, а также ведения журнала на 5 миллионов событий, что позволяет обслуживать потребности крупнейшего учреждения.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="registration">
+        <form class="registration__form">
+          <fieldset class="field">
+            <legend class="field__legend">Форма реєстрації
+            </legend>
+            <div class="field__container"><input class="field__input input-name" type="text" name="name" required="required" placeholder="Ім'я"/><input class="field__input input-mail" type="email" name="email" required="required" placeholder="E-mail"/><input class="field__input input-phone" type="tel" name="phone" placeholder="Телефон"/><input class="field__input input-organization" type="text" name="organization" placeholder="Організація"/>
+              <select class="field__select select-activity" name="activity" size="1" required="required">
+                <option disabled="disabled" value="" selected="selected">Вид діяльності</option>
+                <option value="Ігрова діяльність">Ігрова діяльність</option>
+                <option value="Навчальна діяльність">Навчальна діяльність</option>
+                <option value="Праця">Праця</option>
+              </select><input class="field__input input-date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Дата" type="text"/><textarea class="field__textarea message" type="text" name="message" required="required" rows="1" placeholder="Повідомлення"></textarea>
+              <button class="field__btn send-btn" type="submit">Надіслати
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <footer class="footer"><span class="footer__copyright">© 2018 Barracuda. All rights reserved</span>
+        <div class="author">
+          <p class="author__name">Зроблено силами <strong>Wasya1212</strong> та <strong>Otakoyi</strong>
+          </p>
+          <div class="author__icon"><img class="author__img" src="../img/icons/otakoi.png" alt="" role="presentation"/>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- build:js js/vendor.js-->
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="libs/flatpickr/src/l10n/ru.js"></script>
     <!-- endbuild-->
     <!-- build:js js/main.js-->
     <script src="js/main.js"></script>

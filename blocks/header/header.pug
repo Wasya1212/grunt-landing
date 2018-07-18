@@ -3,11 +3,41 @@ mixin header(data)
     +e.DIV.container
       +e.DIV.logo
         +b.A.logo(href='##')
-          +e.IMG.img(src="img/logo/logo.svg")
+          +e.IMG.img(src="img/logo/Barracuda_logo_print_RGB.png")
+      +e.DIV.top-line
+        +b.DIV.header-search
+          +e.INPUT.input-field(type="text", placeholder="Шукати...")
+          +e.I.icon
+            include ../../app/img/icons/Search.svg
+        +b.DIV.contact-us
+          +e.SPAN.phone-number +38 063 154 35 56
+        +b.DIV.user-profile
+          +e.A.link(href="#")
+            +e.I.icon
+              include ../../app/img/icons/profile.svg
+            +e.SPAN.desc-title Мій кабінет
+        +b.DIV.languages.dropdown
+          +e.I.icon
+            include ../../app/img/icons/worldwide.svg
+          +e.SPAN.current-lang ua
+          +e.MENU.list(type="context")
+            +e.MENUITEM.lang ua
+            +e.MENUITEM.lang en
+            +e.MENUITEM.lang ru
       +e.DIV.nav
         +b.NAV.header-nav
           each item in data.menu
-            +e.DIV.item
-              +e.A.link(href=item.href)= item.text
-      +e.DIV.btn
-        +b.BUTTON.btn(class="--header") Заявка на просчет
+            if item.submenu
+              +e.DIV.item.dropdown
+                +e.A.link(href=item.href)= item.text
+                +b.UL.submenu
+                  each subitem in item.submenu
+                    +e.LI.item
+                      +e.A.link(href=subitem.href)= subitem.text
+            else
+              +e.DIV.item
+                +e.A.link(href=item.href)= item.text
+        +b.DIV.header-shopping-cart
+          +e.I.icon(class="shopping_cart")
+            include ../../app/img/icons/shopping-cart.svg
+          +e.SPAN.products-count 0 шт

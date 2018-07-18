@@ -1,0 +1,49 @@
+mixin content(data)
+  +b.SECTION.products
+    +e.ARTICLE.head
+      +e.H3.title Нові товари
+      +e.A.show-more(href="##") Показати усі
+    +e.SECTION.items
+      each product in data.products
+        +b.DIV.product
+          +e.DIV.control
+            +b.panel
+              +b.A.btn(nohref, class="buy")
+                +e.I.icon(class="shopping_cart")
+                  include ../../app/img/icons/shopping-cart.svg
+                +e.SPAN.text В КОШИК
+              +b.A.btn(nohref, class="details")
+                +e.I.icon(class="info")
+                  include ../../app/img/icons/info.svg
+                +e.SPAN.text ДЕТАЛЬНІШЕ
+              +b.DIV.price
+                if product.sale
+                  +e.SPAN.old= product.sale + ' грн'
+                +e.SPAN.new= product.price + ' грн'
+            +b.DIV.picture
+              +e.IMG.img(src= product.image)
+            if product.sale
+              +e.SPAN.sale АКЦІЯ
+          +e.DIV.description
+            +e.STRONG.name= product.name
+            +e.P.characteristic= product.description
+            
+mixin registrationForm()
+  +b.SECTION.registration
+    +e.FORM.form
+      +b.FIELDSET.field
+        +e.LEGEND.legend Форма реєстрації
+        +e.DIV.container
+          +e.INPUT.input(class="input-name", type="text", name="name", required, placeholder="Ім'я")
+          +e.INPUT.input(class="input-mail", type="email", name="email", required, placeholder="E-mail")
+          +e.INPUT.input(class="input-phone", type="tel", name="phone", placeholder="Телефон")
+          +e.INPUT.input(class="input-organization", type="text", name="organization", placeholder="Організація")
+          +e.SELECT.select(class="select-activity", name="activity", size="1", required)
+            option(disabled, value="", selected) Вид діяльності
+            option(value="Ігрова діяльність") Ігрова діяльність
+            option(value="Навчальна діяльність") Навчальна діяльність
+            option(value="Праця") Праця
+          +e.INPUT.input(class="input-date", onfocus="(this.type='date')", onblur="(this.type='text')", name="date", placeholder="Дата")
+          +e.TEXTAREA.textarea(class="message", type="text", name="message", required, rows="1", placeholder="Повідомлення")
+          +e.BUTTON.btn(class="send-btn", type="submit") Надіслати
+        

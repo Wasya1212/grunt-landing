@@ -1,18 +1,185 @@
 .header
-  padding: 15px 0
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+  padding: 1rem
+  box-sizing: border-box
+  &__top-line
+    width: auto
+    margin: 15px 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+    &>*
+      display: inline-flex
+      align-items: center
+      margin: 0 15px
+    .header-search
+      user-select: none
+      &__icon
+        margin-left: 15px
+        cursor: pointer
+        fill: $main-color
+      input
+        font-family: "Segoe UI"
+        font-size: 12px
+        outline: none
+        border: 0px
+        border-bottom: 2px solid $main-color
+        width: 0
+        opacity: 0
+        transition: .25s width ease, .25s color ease .25s
+        color: transparent
+        &.active
+          width: 250px
+          max-width: 250px
+          opacity: 1
+          color: #717274
+    .languages
+      position: relative
+      cursor: pointer
+      color: #717274
+      text-transform: uppercase
+      font-family: "Segoe UI"
+      letter-spacing: 0.24px
+      font-size: 12px
+      &__icon
+        margin-right: 8px
+      .languages__current-lang
+        user-select: none
+      menu
+        border: 1px solid rgba(#717274, 0.4)
+        background-color: #ffffff
+        height: auto
+        padding: 10px
+        position: absolute
+        right: 0
+        bottom: -7px
+        transform: translateY(100%)
+        text-align: right
+        display: none
+        menuitem
+          display: block
+          width: 100%
+          line-height: 20px
+          &:hover
+            color: $main-bg-color
+      &.active
+        &::after
+          transform: translateY(2px) rotate(0deg) scale(2, 1)
+        menu
+          display: block
+    .contact-us
+      span
+        text-transform: uppercase
+        color: #717274
+        font-family: "Segoe UI"
+        font-size: 12px
+        line-height: 22px
+        letter-spacing: 0.24px
+        border-bottom: 1px dashed #717274
+    .user-profile
+      &__icon
+        margin-right: 11px
+      &__desc-title
+        letter-spacing: 0.26px
+        font-family: "Segoe UI"
+        font-size: 13px
+        color: #717274
   &__container
-    +container()
-  &__logo,
-  &__btn
-    +col(3)
-  &__btn
-    text-align: right
+    position: relative
+    display: flex
+    align-items: flex-end
+    justify-content: space-around
+    flex-flow: column wrap
+  &__logo
+    width: 150px
+    height: 69px
+    align-self: flex-start
+    order: 1
+    position: absolute
+    img
+      width: 100%
+      height: 100%
+      max-width: 100%
+      max-height: 100%
+      object-fit: contain
+      object-position: center
+  &__nav
+    position: relative
+    .submenu
+      position: absolute
+      top: 100%
+      background-color: #ffffff
+      padding: 1rem
+      cursor: pointer
+      min-width: max-content
+      display: none
+      border-left: 2px solid #717274
+      box-shadow: -2px 0px 5px rgba(#717274, 0.4)
+      &__item
+        padding: 8px 15px
+        box-sizing: border-box
+      &__link
+        font-family: "Segoe UI"
+        font-size: 14px
+        display: block
+        color: #717274
+        text-transform: capitalize
+        line-height: 22px
+        letter-spacing: 0.24px
+        &:hover
+          cursor: pointer
+          color: $main-bg-color
   &-nav
-    line-height: 40px
-    margin: 0 -15px
+    display: inline-block
     &__link
-      color: $font-color-dark
-      font-weight: 900
+      color: #3a2020
+      line-height: 22px
+      text-transform: uppercase
+      font-family: "DIN Pro"
+      letter-spacing: 0.28px
+      font-size: 14px
+      font-weight: bold
+      &:hover
+        color: darken($main-bg-color, 10%)
     &__item
       display: inline-block
       margin: 0 15px
+      &:hover
+        &::after
+          transform: translateY(0px) rotate(0deg) scale(2, 1)
+        .submenu
+          display: block
+  &-shopping-cart
+    cursor: pointer
+    background-color: #f6f6f6
+    display: inline-block
+    padding: 7px 15px
+    box-sizing: border-box
+    &__icon
+      display: inline-block
+      width: 12px
+      height: 12px
+      margin-right: 9px
+      fill: $main-color
+    &__products-count
+      font-family: "Segoe UI"
+      font-size: 12px
+      line-height: 22px
+      letter-spacing: 0.24px
+      color: #717274
+
+@media (max-width: $media-md)
+  .header
+    &__container
+      flex-direction: row
+      justify-content: space-between
+    &__logo
+      position: relative
+      order: -1
+    &__nav
+      margin-top: 15px
+      width: 100%
+      text-align: center

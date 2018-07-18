@@ -3,7 +3,7 @@ include _assets/bemto/bemto
 
 include head/head
 include header/header
-include head-line/head-line
+include footer/footer
 include intro/intro
 include title/title
 
@@ -13,56 +13,79 @@ html(lang="ru")
 	block head
 		head
 			+head({
-				"title": "Workshop",
-				"author": "Space Academy",
-				"description": "Workshop"
+				"title": "Barracuda",
+				"author": "Wasya1212",
+				"description": "Simple site"
 			})
 			
 		+b.BODY.page
 			+e.DIV.wrap
 				block header
-					+head-line()
 					+header({
 						"menu": [
 							{
-								"text": "Главная",
+								"text": "Продукція",
+								"href": "index.html",
+								"submenu": [
+									{"href": "index.html", "text": "Продукція 1"},
+									{"href": "index.html", "text": "Продукція 2"},
+									{"href": "index.html", "text": "Продукція 3"},
+									{"href": "index.html", "text": "Продукція 4"},
+									{"href": "index.html", "text": "Продукція 5"},
+									{"href": "index.html", "text": "Продукція 6"}
+								]
+							},
+							{
+								"text": "Готові рішення",
+								"href": "index.html",
+								"submenu": [
+									{"href": "index.html", "text": "Продукція 1"},
+									{"href": "index.html", "text": "Продукція 2"},
+									{"href": "index.html", "text": "Продукція 3"},
+									{"href": "index.html", "text": "Продукція 4"},
+									{"href": "index.html", "text": "Продукція 5"},
+									{"href": "index.html", "text": "Продукція 6"},
+									{"href": "index.html", "text": "Продукція 7"},
+									{"href": "index.html", "text": "Продукція 8"},
+									{"href": "index.html", "text": "Продукція 9"},
+									{"href": "index.html", "text": "Продукція 10"}
+								]
+							},
+							{
+								"text": "Підтримка",
 								"href": "index.html"
 							},
 							{
-								"text": "О нас",
-								"href": "index.html"
+								"text": "Система",
+								"href": "index.html",
+								"submenu": [
+									{"href": "index.html", "text": "Продукція 1"},
+									{"href": "index.html", "text": "Продукція 2"},
+									{"href": "index.html", "text": "Продукція 3"}
+								]
 							},
 							{
-								"text": "Услуги",
-								"href": "index.html"
-							},
-							{
-								"text": "информация",
-								"href": "index.html"
-							},
-							{
-								"text": "Блог",
-								"href": "index.html"
-							},
-							{
-								"text": "Контакты",
+								"text": "Контакти",
 								"href": "index.html"
 							}
 						]
 					})
 					
 				block content
-					div content
+					+content()
 
 				block footer
-					footer footer
+					+footer()
 				
 			block vendors
 				// build:js js/vendor.js
-				script( src="libs/jquery/dist/jquery.min.js")
+				script(src="libs/jquery/dist/jquery.min.js")
+				script(src="libs/slick-carousel/slick/slick.min.js")
+				script(src="https://cdn.jsdelivr.net/npm/flatpickr")
+				script(src="libs/flatpickr/src/l10n/ru.js")
 				// endbuild
 
 			block scripts
 				// build:js js/main.js
-				script( src="js/main.js")
+				script(src="js/main.js")
 				// endbuild
